@@ -1,7 +1,8 @@
-/* Default Site Styles */
+/* Global Site Styles */
 
+/* struggling with changing fonts*/
 
-body{
+body, h1, h2, h3, p{
     font-size: 24px;
     font-family: "Georgia", serif;
     font-style: normal;
@@ -12,7 +13,29 @@ body{
     margin: 0;
 }
 
-a:link{
+h1{
+    font-size: 48px;
+    letter-spacing: 2px;
+}
+
+h2{
+    font-size: 36px;
+}
+
+h3{
+    font-size: 32px;
+}
+
+p{ 
+    color: #1C4935;
+}
+
+ul, dl{
+    list-style-type: none;
+    padding: 0px;
+}
+
+a:link, a:hover, a:visited{
     font-size: 24px;
     font-family: "Georgia", serif;
     font-style: normal;
@@ -24,74 +47,15 @@ a:link{
 }
 
 a:hover{
-    font-size: 24px;
-    font-family: "Georgia", serif;
-    font-style: normal;
-    text-decoration: underline;
     font-weight: bold;
-    font-display: block;
-    text-align: center;
     color: greenyellow;
 }
 
 a:visited{
-    font-size: 24px;
-    font-family: "Georgia", serif;
-    font-style: normal;
-    text-decoration: underline;
-    font-weight: normal;
-    font-display: block;
-    text-align: center;
     color: darkgreen;
 }
 
-h1{
-    font-size: 48px;
-    font-family: "Georgia", serif;
-    font-style: normal;
-    font-weight: bold;
-    font-display: block;
-    letter-spacing: 2px;
-    text-align: center;
-    color: #fdcc00;
-}
-
-h2{
-    font-size: 36px;
-    font-family: "Georgia", serif;
-    font-style: normal;
-    font-weight: bold;
-    font-display: block;
-    text-align: center;
-    color: #fdcc00;
-}
-
-h3{
-    font-size: 32px;
-    font-family: "Georgia", serif;
-    font-style: normal;
-    font-weight: bold;
-    font-display: block;
-    text-align: center;
-    color: #fdcc00;
-}
-
-p{ 
-    font-size: 24px;
-    font-family: "Georgia", serif;
-    font-style: normal;
-    font-weight: bold;
-    font-display: block;
-    text-align: center;
-    color: darkgreen;
-}
-
-ul, dl{
-    list-style-type: none;
-    padding: 0px;
-}
-
-a.email-link{
+a.email-link, a.email-link:hover{
     color: #fdcc00;
     font-family: "Georgia", serif;
     font-style: normal;
@@ -103,11 +67,6 @@ a.email-link{
 a.email-link:hover{
     color: #1C4935;
     background-color: #fdcc00;
-    font-family: "Georgia", serif;
-    font-style: normal;
-    font-weight: bold;
-    font-display: block;
-    text-align: center;
 }
 
 
@@ -135,7 +94,7 @@ a.email-link:hover{
 
 /* Note: color change do not extend all the way to the top and bottom at certain resolutions */
 
-#navigation p{
+#navigation p, #navigation a{
     font-family: "Georgia", serif;
     font-style: normal;
     text-decoration: none;
@@ -148,13 +107,6 @@ a.email-link:hover{
 
 #navigation a{
     font-size: 1.7vw;
-    font-family: "Georgia", serif;
-    font-style: normal;
-    text-decoration: none;
-    font-weight: bold;
-    text-align: center;
-    background-color: #1F9547;
-    color: #FFFFFF;
     padding-left: .3%;
     padding-right: .3%;
 }
@@ -165,55 +117,59 @@ a.email-link:hover{
 }
 
 
+/* Index Styles */
+
+.cover-photo{
+    max-width: 80%;
+    max-height: auto;
+    padding-top: 5%;    
+}
+
+.announcement-title{
+    font-size: 60px;
+    color: #fdcc00;
+    text-decoration: underline;
+}
+
+.announcement-message{
+    font-size: 48px;
+    color: #1C4935;
+}
+
+.events-title{
+    font-size: 60px;
+    color: #fdcc00;
+    text-decoration: underline;
+}
+
+#event-list a{
+    font-size: 36px;
+    color: #1C4935;
+    text-decoration: underline;
+}
+
+#event-list a:hover{
+    color: #fdcc00;
+}
+
+.embed-video-player{
+    padding: 25px;
+}
+
 /* Footer */
 
-/* This wasn't working for me so I had to write them out individually 
-.contacts p{
-    font-size: 1.2vw;
-    color: #FFFFFF;
-}
-*/
-#contact-director1{
+
+#contact-director1, #contact-director2, #contact-director3{
     float: left;
     width: 33.33%;
     background-color: #1C4935;
 }
 
-#contact-director1 p {
+#contact-director1 p, #contact-director2 p, #contact-director3 p{
     font-size: 1.2vw;
     color: #FFFFFF;
 }
 
-#contact-director1 a {
-    font-size: 1.2vw;
-}
-
-#contact-director2{
-    float: left;
-    width: 33.33%;
-    background-color: #1C4935;
-}
-
-#contact-director2 p{
-    font-size: 1.2vw;
-    color: #FFFFFF;
-}
-
-#contact-director2 a {
-    font-size: 1.2vw;
-}
-
-#contact-director3{
-    float: left;
-    width: 33.33%;
-    background-color: #1C4935;
-}
-
-#contact-director3 p{
-    font-size: 1.2vw;
-    color: #FFFFFF;
-}
-
-#contact-director3 a {
+#contact-director1 a, #contact-director2 a, #contact-director3 a {
     font-size: 1.2vw;
 }

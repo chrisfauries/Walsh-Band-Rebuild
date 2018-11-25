@@ -2,15 +2,18 @@
 
 /* struggling with changing fonts*/
 
-body, h1, h2, h3, p{
-    font-size: 24px;
-    font-family: "Georgia", serif;
+* {
+    font-family: Georgia, serif;
     font-style: normal;
-    font-weight: bold;
-    font-display: block;
     text-align: center;
-    color: #fdcc00;
     margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 24px;
+    font-weight: normal;
+    color: #fdcc00;
 }
 
 h1{
@@ -41,7 +44,6 @@ a:link, a:hover, a:visited{
     font-style: normal;
     text-decoration: underline;
     font-weight: normal;
-    font-display: block;
     text-align: center;
     color: green;
 }
@@ -60,8 +62,8 @@ a.email-link, a.email-link:hover{
     font-family: "Georgia", serif;
     font-style: normal;
     font-weight: bold;
-    font-display: block;
     text-align: center;
+    line: 20px;
 }
 
 a.email-link:hover{
@@ -103,12 +105,15 @@ a.email-link:hover{
     background-color: #1F9547;
     color: #FFFFFF;
     margin: 0;
+    padding: 0;
+    /*  line-height: 1.7vw;    */
 }
 
 #navigation a{
     font-size: 1.7vw;
-    padding-left: .3%;
-    padding-right: .3%;
+    text-transform: uppercase;
+    padding-left: .5%;
+    padding-right: .5%;
 }
 
 #navigation a:hover{
@@ -159,6 +164,7 @@ a.email-link:hover{
 /* Footer */
 
 
+
 #contact-director1, #contact-director2, #contact-director3{
     float: left;
     width: 33.33%;
@@ -168,8 +174,9 @@ a.email-link:hover{
 #contact-director1 p, #contact-director2 p, #contact-director3 p{
     font-size: 1.2vw;
     color: #FFFFFF;
+    line-height: 1em;
 }
 
-#contact-director1 a, #contact-director2 a, #contact-director3 a {
+#contact-director1 a, #contact-director2 a, #contact-director3 a{
     font-size: 1.2vw;
 }

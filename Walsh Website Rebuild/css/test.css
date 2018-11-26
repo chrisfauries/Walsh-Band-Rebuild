@@ -1,23 +1,26 @@
 body{
-    background-image: url(/img/);
+    background-image: url(/img/test_background.jpg);
+    background-repeat: round;
+    background-color: #12648C;
     margin: 0;
 }
 
 .nav-bar {
-    background-color: white;
-    width: 20%;
+    background-color: #F4FDFE;
+    width: 15%;
     margin:5% 0% 3% 2%;
     height: 100%;
-    padding: 20px;
+    padding: 2%;
     float: left;
     display:inline-block;
     text-align: center;
+    opacity: 0.9;
     
 }
 
 h1 {
     text-align: center;
-    font-family: Georgia;
+    font-family: Impact;
     font-size: 4em;
     text-decoration: underline
     
@@ -26,10 +29,12 @@ h1 {
 p {
     margin: 20px;
     padding: 2%;
-    border: 2px solid black;
+    border: 1px solid #0A456A;
     font-family: Georgia;
     font-size: 2em;  
     border-radius: 30px;
+    text-indent: 5%;
+    background-color: #C0FFEF;
 }
 
 .banner {
@@ -38,16 +43,18 @@ p {
     margin: 0;
     text-align: center;
     font-size: 7em;
-    background-color: red;
+    background-color: #12648C;
     border-radius: 0;
+    color: #4BFFCA;
 }
 
 .main-content {
     display: inline-block;
     width: 50%;
     margin: 5%;
-    background-color: white;
+    background-color: #F4FDFE;
     float: left;
+    opacity: 0.9;
 }
 
 .nav-bar a {
@@ -65,4 +72,21 @@ p {
 .nav-bar a:hover {
     color: green;
     background-color: aqua;
+}
+
+.add-bar {
+    background-color: #F4FDFE;
+    width: 12%;
+    margin-top: 5%;
+    height: 100%;
+    padding: 2%;
+    float: left;
+    display:inline-block;
+    text-align: center;
+    opacity: 0.9;
+}
+
+img {
+    width: 20px;
+    height: 100px;
 }

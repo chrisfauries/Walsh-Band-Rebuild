@@ -1,0 +1,26 @@
+body{
+    background-color: gainsboro;
+}
+
+.article-box{
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+    padding: 20px;
+    align-content: center;
+}
+
+h1 {
+    text-align: center;
+    font-family: Georgia;
+    font-size: 2em;  
+}
+
+p {
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid black;
+    font-family: Georgia;
+    font-size: 2em;        
+}

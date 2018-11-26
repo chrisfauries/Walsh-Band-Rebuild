@@ -147,13 +147,13 @@ a.email-link:hover{
     text-decoration: underline;
 }
 
-#event-list a{
+.events-list a{
     font-size: 36px;
     color: #1C4935;
     text-decoration: underline;
 }
 
-#event-list a:hover{
+.events-list a:hover{
     color: #fdcc00;
 }
 

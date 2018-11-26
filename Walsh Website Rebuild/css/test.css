@@ -1,26 +1,68 @@
 body{
-    background-color: gainsboro;
+    background-image: url(/img/);
+    margin: 0;
 }
 
-.article-box{
+.nav-bar {
     background-color: white;
-    width: 80%;
-    margin: 0 auto;
+    width: 20%;
+    margin:5% 0% 3% 2%;
     height: 100%;
     padding: 20px;
-    align-content: center;
+    float: left;
+    display:inline-block;
+    text-align: center;
+    
 }
 
 h1 {
     text-align: center;
     font-family: Georgia;
-    font-size: 2em;  
+    font-size: 4em;
+    text-decoration: underline
+    
 }
 
 p {
     margin: 20px;
-    padding: 20px;
+    padding: 2%;
     border: 2px solid black;
     font-family: Georgia;
-    font-size: 2em;        
+    font-size: 2em;  
+    border-radius: 30px;
+}
+
+.banner {
+    border: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 7em;
+    background-color: red;
+    border-radius: 0;
+}
+
+.main-content {
+    display: inline-block;
+    width: 50%;
+    margin: 5%;
+    background-color: white;
+    float: left;
+}
+
+.nav-bar a {
+    display: block;
+    font-size: 3em;
+    color: aqua;
+    line-height: 1.5em;
+    text-decoration: none;
+    font-family: Georgia;
+    background-color: green;
+    width: 50%;
+    margin: 10% auto;     
+}
+
+.nav-bar a:hover {
+    color: green;
+    background-color: aqua;
 }

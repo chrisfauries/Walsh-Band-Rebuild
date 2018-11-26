@@ -164,19 +164,22 @@ a.email-link:hover{
 /* Footer */
 
 
-
-#contact-director1, #contact-director2, #contact-director3{
+.single-contact{
     float: left;
     width: 33.33%;
     background-color: #1C4935;
 }
 
-#contact-director1 p, #contact-director2 p, #contact-director3 p{
+.single-contact p{
+    font-family: Georgia;
+    font-weight: bold;
     font-size: 1.2vw;
     color: #FFFFFF;
     line-height: 1em;
+    text-align: center;
 }
 
-#contact-director1 a, #contact-director2 a, #contact-director3 a{
+.single-contact a{
     font-size: 1.2vw;
+    line-height: 1em;
 }

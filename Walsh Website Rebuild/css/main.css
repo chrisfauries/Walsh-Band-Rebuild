@@ -61,26 +61,33 @@ a.email-link:hover{
 
 /* Banner Styles */
 
+#header{
+    position: fixed;
+    width: 100%;
+}
+
 #banner{
     background-color: #1C4935;
     height: 144px;
 }
 
 #banner .banner-logo{
-    height: 100%;
+    height: calc(100% - 16px);
     float: left;
+    padding: 8px;
 }
 
 #banner .banner-title{
-    font-size:3em;
-    padding: 32px;
+    font-size: 60px;
+    padding-top: 40px;
+    margin-right: 60px;
 }
 
 
 /* Navigation Bar */
 
 #navigation{
-    height: 32px;
+    height: 28px;
     background-color: #1F9547;
     
 }
@@ -92,9 +99,9 @@ a.email-link:hover{
     font-weight: bold;
     text-align: center;
     color: #FFFFFF;
-    font-size: 28px;
+    font-size: 24px;
     text-transform: uppercase;
-    margin-left: 10px;
+    padding: 0px 8px;
 
 }
 
@@ -105,6 +112,10 @@ a.email-link:hover{
 
 
 /* Index Styles */
+
+#main-content{
+    padding-top: 144px;
+}
 
 .cover-photo{
     max-width: 80%;

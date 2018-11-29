@@ -16,19 +16,6 @@ body {
     color: #fdcc00;
 }
 
-h1{
-    font-size: 48px;
-    letter-spacing: 2px;
-}
-
-h2{
-    font-size: 36px;
-}
-
-h3{
-    font-size: 32px;
-}
-
 p{ 
     color: #1C4935;
 }
@@ -74,46 +61,41 @@ a.email-link:hover{
 
 /* Banner Styles */
 
+#banner{
+    background-color: #1C4935;
+    height: 144px;
+}
 
-#bannerlogo img{
-    max-width: 10%;
-    max-height: auto;
-    min-height: 1vw;
-    margin: 0px;
+#banner .banner-logo{
+    height: 100%;
     float: left;
 }
 
-#bannertitle h1{
-    font-size: 5vw;
-    background-color: #1C4935;
-    margin: 0px;
-    padding-top: 2%;
-    padding-bottom: 2.5%;
+#banner .banner-title{
+    font-size:3em;
+    padding: 32px;
 }
 
 
 /* Navigation Bar */
 
-/* Note: color change do not extend all the way to the top and bottom at certain resolutions */
+#navigation{
+    height: 32px;
+    background-color: #1F9547;
+    
+}
 
-#navigation p, #navigation a{
+#navigation a{
     font-family: "Georgia", serif;
     font-style: normal;
     text-decoration: none;
     font-weight: bold;
     text-align: center;
-    background-color: #1F9547;
     color: #FFFFFF;
-    margin: 0;
-    padding: 0;
-    /*  line-height: 1.7vw;    */
-}
-
-#navigation a{
-    font-size: 1.7vw;
+    font-size: 28px;
     text-transform: uppercase;
-    padding-left: .5%;
-    padding-right: .5%;
+    margin-left: 10px;
+
 }
 
 #navigation a:hover{

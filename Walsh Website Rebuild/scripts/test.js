@@ -1,10 +1,5 @@
 // Test Java Script 1
 
-var YouLikeMeat = 11;
+var myString = 'I\'m a "fun" String';
 
-if (YouLikeMeat > 10){
-    
-    document.write("Here is the meaty menu...")
-    
-}
-
+console.log(myString.length);

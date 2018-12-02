@@ -4,7 +4,7 @@
 
 var headerHTML = document.createElement("div");
 
-headerHTML.innerHTML = 'boo!';
+headerHTML.innerHTML = '<div id="header"><div id="banner"><a href="index.html"><img src="img/walsh_logo.jpg" alt="Walsh Band Logo" class="banner-logo"></a><h1 class="banner-title">Walsh Middle School Band</h1></div><div id="navigation"><a href="calender.html">calendar</a><a href="assignments.html">assignments</a><a href="directors.html">directors</a><a href="5thgraders.html">5th graders</a><a href="privatelessons.html">Private lessons</a><a href="handouts.html">Handouts</a><a href="links.htmls">Links</a></div></div>';
 
 var body = document.getElementsByTagName("body")[0];
 
@@ -13,26 +13,13 @@ var beforeMainContent = document.getElementById("main-content");
 body.insertBefore(headerHTML,beforeMainContent);
 
 
+/* Footer Insertion */
 
 
-/*
+var footerHTML = document.createElement("div");
 
-<!-- Header Banner -->
-        <div id="header">
-            <div id="banner">
-                    <a href="index.html"><img src="img/walsh_logo.jpg" alt="Walsh Band Logo" class="banner-logo"></a>
-                    <h1 class="banner-title">Walsh Middle School Band</h1>
-            </div>
+footerHTML.innerHTML = '<div id="footer"><div class="single-contact"><p>Director of Bands:</p><p>Jennifer Bergeron</p><a href="mailto:jennifer_bergeron@roundrockisd.org" class="email-link">jennifer_bergeron@roundrockisd.org</a><p>phone: (512) 704-0836</p></div><div class="single-contact"><p>Assistant Director of Bands:</p><p>Chris Fauries</p><a href="mailto:chris_fauries@roundrockisd.org" class="email-link">chris_fauries@roundrockisd.org</a><p>phone: (512) 704-0832</p></div><div class="single-contact"><p>Assistant Director of Bands:</p><p>Josh Stover</p><a href="mailto:joshua_stover@roundrockisd.org" class="email-link">joshua_stover@roundrockisd.org</a><p>phone: (512) 704-0835</p></div>';
 
- <!-- Navigation Bar -->
+body.appendChild(footerHTML);
 
-            <div id="navigation">
-                <a href="calender.html">calendar</a>
-                <a href="assignments.html">assignments</a>
-                <a href="directors.html">directors</a>
-                <a href="5thgraders.html">5th graders</a>
-                <a href="privatelessons.html">Private lessons</a>
-                <a href="handouts.html">Handouts</a>
-                <a href="links.htmls">Links</a>
-            </div>
-        </div>'
+

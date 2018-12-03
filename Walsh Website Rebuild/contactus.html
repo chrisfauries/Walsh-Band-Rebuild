@@ -16,38 +16,36 @@
     <body>
        <div id="main-content">
         
-        
-        <h2>Contact Us:</h2>
-
-        <form action="mailto:sample@example.com" method="post" enctype="text/plain">
-        To: <br>
-        <select name="teacher-emails">
-            <option>--- Directors ---</option>
-            <option>Jennifer Bergeron</option>
-            <option>Chris Fauries</option>
-            <option>Josh Stover</option>
-            <option></option>
-            <option>--- Lesson Teachers ---</option>
-            <option>Beth B</option>
-            <option>Kevin Gibbs</option>
-            <option>Andy Russell</option>
-            <option>Carolyn Trowbridge</option>    
-        </select>
-        <br>
-        First Name: *
-        <input type="text" name="adult-first-name"><br>
-        Last Name: *
-        <input type="text" name="adult-last-name"><br>
-        Student's Name: 
-        <input type="text" name="student-name"><br>
-        E-mail:*
-        <input type="text" name="mail"><br>
-        Message:<br>
-        <input type="text" name="message" size="50"><br><br>
-        <input type="submit" value="Send">
-        <input type="reset" value="Reset">
-        </form>
-           
+            <div class="contact-us">
+                <form id="contact-us-form" name="contactUsForm" action="mailto:chrisfauries@google.com" method="post" enctype="text/plain">
+                <h2>Contact Us:</h2>
+                To: 
+                <select name="teacher-emails">
+                <option>--- Directors ---</option>
+                <option>Jennifer Bergeron</option>
+                <option>Chris Fauries</option>
+                <option>Josh Stover</option>
+                <option></option>
+                <option>--- Lesson Teachers ---</option>
+                <option>Beth B</option>
+                <option>Kevin Gibbs</option>
+                <option>Andy Russell</option>
+                <option>Carolyn Trowbridge</option>    
+                </select>
+                <br>
+                First Name: * <span id="error-message-1"></span>
+                <input type="text" name="adultFirstName"><br>
+                Last Name: * <span id="error-message-2"></span>
+                <input type="text" name="adultLastName"><br>
+                Student's Name: 
+                <input type="text" name="student-name"><br>
+                E-mail:* <span id="error-message-3"></span>
+                <input type="text" name="email"><br>
+                Message:<br>
+                <input type="text" name="message" size="50"><br><br>
+                <input id="submit-button" type="submit" name="submit" value="Send">
+                </form>
+            </div>  
         </div>
         <script src="scripts/main.js"></script>
     </body>

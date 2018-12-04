@@ -76,9 +76,22 @@ a.email-link:hover{
 }
 
 #banner .banner-title{
+    font-size: 28px;
     padding-top: 36px;
     padding-right: 132px;
     flex-grow: 1;
+}
+
+@media only screen and (min-width: 768px) {
+    #banner .banner-title{
+        font-size: 38px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #banner .banner-title{
+        font-size: 50px;
+    }
 }
 
 /* Navigation Bar */
@@ -109,7 +122,31 @@ a.email-link:hover{
     background-color: #1C4935;
 }
 
+@media only screen and (min-width: 768px) {
+    
+    
+    #nav ul{
+        display:flex;
+        justify-content: space-around;
+        padding: 0px 60px 0px 0px;
+        flex-wrap: wrap;
 
+    }
+    
+    #nav a{
+        display: inline;
+        font-size: 24px;  
+        padding: 0px 8px;
+    }
+    
+    #nav li{
+       // flex: 1 1 0;
+    }
+    
+    .mobile-menu-title{
+        text-indent: -10000px;
+    }
+}
 
 /* Index Styles */
 
@@ -184,13 +221,3 @@ a.email-link:hover{
     line-height: 1em;
 }
 
-
-
-/* Media Queries
-
-
-@media screen and (min-width: 768px){
-    #nav ul{
-        display:flex;
-    }
-}

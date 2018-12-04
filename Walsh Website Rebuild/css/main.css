@@ -1,10 +1,8 @@
 /* Global Site Styles */
 
-/* struggling with changing fonts*/
 
 * {
     font-family: Georgia, serif;
-    font-style: normal;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -20,10 +18,6 @@ p{
     color: #1C4935;
 }
 
-ul, dl{
-    list-style-type: none;
-    padding: 0px;
-}
 
 a:link, a:hover, a:visited{
     font-size: 24px;
@@ -58,64 +52,69 @@ a.email-link:hover{
     background-color: #fdcc00;
 }
 
+#main-content{
+    padding-top: 200px;
+}
 
 /* Banner Styles */
 
 #header{
-    position: fixed;
     width: 100%;
 }
 
 #banner{
     background-color: #1C4935;
     height: 144px;
+    display: flex;
 }
 
 #banner .banner-logo{
     height: calc(100% - 16px);
-    float: left;
     padding: 8px;
+    max-width: 132px;
+    max-height: 132px;
 }
 
 #banner .banner-title{
-    font-size: 60px;
-    padding-top: 40px;
-    margin-right: 60px;
+    padding-top: 36px;
+    padding-right: 132px;
+    flex-grow: 1;
 }
-
 
 /* Navigation Bar */
 
-#navigation{
-    height: 28px;
+#nav{
+    height: auto;
     background-color: #1F9547;
-    
 }
 
-#navigation a{
-    font-family: "Georgia", serif;
-    font-style: normal;
+#nav ul{
+    list-style-type: none;
+    padding: 0px; 
+}
+
+#nav a{
     text-decoration: none;
     font-weight: bold;
     text-align: center;
     color: #FFFFFF;
-    font-size: 24px;
+    font-size: 32px;
     text-transform: uppercase;
-    padding: 0px 8px;
-
+    padding: 8px;
+    display: block;
 }
 
-#navigation a:hover{
+#nav a:hover{
     color: #fdcc00;
     background-color: #1C4935;
 }
 
 
+
 /* Index Styles */
 
-#main-content{
-    padding-top: 144px;
-}
+
+
 
 .cover-photo{
     max-width: 80%;
@@ -154,6 +153,14 @@ a.email-link:hover{
     padding: 25px;
 }
 
+/* Contact Us */
+
+#contact-us-form{
+    background-color: aquamarine;
+    margin: 0 auto;
+}
+
+
 /* Footer */
 
 
@@ -175,4 +182,15 @@ a.email-link:hover{
 .single-contact a{
     font-size: 1.2vw;
     line-height: 1em;
+}
+
+
+
+/* Media Queries
+
+
+@media screen and (min-width: 768px){
+    #nav ul{
+        display:flex;
+    }
 }

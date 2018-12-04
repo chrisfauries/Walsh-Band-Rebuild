@@ -38,19 +38,7 @@ a:visited{
     color: darkgreen;
 }
 
-a.email-link, a.email-link:hover{
-    color: #fdcc00;
-    font-family: "Georgia", serif;
-    font-style: normal;
-    font-weight: bold;
-    text-align: center;
-    line: 20px;
-}
 
-a.email-link:hover{
-    color: #1C4935;
-    background-color: #fdcc00;
-}
 
 #main-content{
     padding-top: 200px;
@@ -122,13 +110,13 @@ a.email-link:hover{
     background-color: #1C4935;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 767px) {
     
     
     #nav ul{
         display:flex;
         justify-content: space-around;
-        padding: 0px 60px 0px 0px;
+        padding: 0px;
         flex-wrap: wrap;
 
     }
@@ -144,7 +132,7 @@ a.email-link:hover{
     }
     
     .mobile-menu-title{
-        text-indent: -10000px;
+        display: none;
     }
 }
 
@@ -201,23 +189,55 @@ a.email-link:hover{
 /* Footer */
 
 
+
+#footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#footer .single-contact:nth-child(1), #footer .single-contact:nth-child(2){
+    border-right: 4px solid #1F9547;
+}
+
 .single-contact{
-    float: left;
-    width: 33.33%;
     background-color: #1C4935;
+    flex-grow: 1;
+    min-width: 400px;
 }
 
 .single-contact p{
     font-family: Georgia;
     font-weight: bold;
-    font-size: 1.2vw;
+    font-size: 24px;;
     color: #FFFFFF;
-    line-height: 1em;
     text-align: center;
 }
 
-.single-contact a{
-    font-size: 1.2vw;
-    line-height: 1em;
+a.contact-email-link, a.contact-email-link:hover{
+    color: #fdcc00;
+    font-family: "Georgia", serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
 }
 
+a.contact-email-link:hover{
+    color: #1C4935;
+    background-color: #fdcc00;
+}
+
+@media only screen and (max-width: 1200px) {
+    
+    #footer{
+        display: block; 
+    }
+        
+    .single-contact{
+        padding: 16px 0px;
+    }    
+    
+    #footer .single-contact:nth-child(1), #footer .single-contact:nth-child(2){
+    border-right: none;
+    border-bottom: 4px solid #1F9547;
+    }
+}

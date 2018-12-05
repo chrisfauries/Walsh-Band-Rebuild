@@ -1,0 +1,12 @@
+Flexbox the header and footer
+
+Make Breakpoints and various styles for header and footer
+
+Create a Mobile Menu with drop-down items
+
+Create Script for scrolling Photos for Front Page
+
+Find a better way to have Header and Footer pull from external file
+
+Create a Contact Us page with in-browser email form
+

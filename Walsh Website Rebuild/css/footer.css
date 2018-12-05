@@ -1,0 +1,67 @@
+* {
+    font-family: Georgia, serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 24px;
+    font-weight: normal;
+    color: #fdcc00;
+}
+
+
+/* Footer Styles */
+
+
+#footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#footer .single-contact:nth-child(1), #footer .single-contact:nth-child(2){
+    border-right: 4px solid #1F9547;
+}
+
+.single-contact{
+    background-color: #1C4935;
+    flex: 1 0 400px;
+}
+
+.single-contact p{
+    font-family: Georgia;
+    font-weight: bold;
+    font-size: 24px;;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+a.contact-email-link, a.contact-email-link:hover{
+    color: #fdcc00;
+    font-family: "Georgia", serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+}
+
+a.contact-email-link:hover{
+    color: #1C4935;
+    background-color: #fdcc00;
+}
+
+@media only screen and (max-width: 1280px) {
+    
+    #footer{
+        display: block; 
+    }
+        
+    .single-contact{
+        padding: 16px 0px;
+    }    
+    
+    #footer .single-contact:nth-child(1), #footer .single-contact:nth-child(2){
+    border-right: none;
+    border-bottom: 4px solid #1F9547;
+    }
+}

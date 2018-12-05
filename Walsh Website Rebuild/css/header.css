@@ -1,0 +1,134 @@
+* {
+    font-family: Georgia, serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 24px;
+    font-weight: normal;
+    color: #fdcc00;
+}
+
+
+/******* Banner Styles *******/
+
+#header{
+    width: 100%;
+}
+
+#banner{
+    background-color: #1C4935;
+    height: 144px;
+    display: flex;
+}
+
+#banner .banner-logo{
+    height: calc(100% - 16px);
+    padding: 8px;
+    max-width: 132px;
+    max-height: 132px;
+}
+
+#banner .banner-title{
+    font-size: 28px;
+    padding-top: 36px;
+    padding-right: 132px;
+    flex-grow: 1;
+}
+
+@media only screen and (min-width: 768px) {
+    #banner .banner-title{
+        font-size: 38px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #banner .banner-title{
+        font-size: 50px;
+    }
+}
+
+/********* Navigation Bar *********/
+
+#nav{
+    height: auto;
+    max-height: 64px;
+    background-color: #1F9547;
+    overflow: hidden;
+    transition: max-height .7s;
+    position: absolute;
+    min-width: 100%;
+    
+}
+
+#nav ul{
+    list-style-type: none;
+    padding: 0px;
+}
+
+#nav a{
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 32px;
+    text-transform: uppercase;
+    padding: 8px;
+    display: block;
+}
+
+#nav a:hover{
+    color: #fdcc00;
+    background-color: #1C4935;
+}
+
+#mobile-menu-title{
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    color: #fdcc00;
+    font-size: 32px;
+    text-transform: uppercase;
+    padding: 8px;
+    display: block;
+    cursor: pointer;
+    
+}
+
+#nav.show-mobile-menu{
+    display: block;
+    max-height: 480px;
+    transition: max-height .7s;
+}
+
+@media only screen and (min-width: 1280px) {
+    
+    #nav {
+    height: auto;
+    position: relative;
+    width: auto;
+    }
+    
+    #nav ul{
+        display:flex;
+        justify-content: space-around;
+        padding: 0px;
+        flex-wrap: wrap;
+    }
+    
+    #nav a{
+        display: inline;
+        font-size: 24px;  
+        padding: 0px 8px;
+    }
+    
+    #nav li{
+       // flex: 1 1 0;
+    }
+    
+    #mobile-menu-title{
+        display: none;
+    }
+}

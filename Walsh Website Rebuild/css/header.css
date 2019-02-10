@@ -1,3 +1,14 @@
+@font-face {
+   font-family: Garamond;
+   src: url(Garamond.ttf);
+}
+
+@font-face {
+   font-family: Garamond;
+   src: url(Garamond_Bold.ttf);
+   font-weight: bold;
+}
+
 * {
     font-family: Georgia, serif;
     text-align: center;
@@ -16,6 +27,7 @@ body {
 
 #header{
     width: 100%;
+		position: absolute;
 }
 
 #banner{
@@ -32,7 +44,7 @@ body {
 }
 
 #banner .banner-title{
-    font-size: 28px;
+    font-size: 32px;
     padding-top: 36px;
     padding-right: 132px;
     flex-grow: 1;
@@ -40,13 +52,13 @@ body {
 
 @media only screen and (min-width: 768px) {
     #banner .banner-title{
-        font-size: 38px;
+        font-size: 44px;
     }
 }
 
 @media only screen and (min-width: 1200px) {
     #banner .banner-title{
-        font-size: 50px;
+        font-size: 72px;
     }
 }
 
@@ -75,13 +87,16 @@ body {
     color: #FFFFFF;
     font-size: 32px;
     text-transform: uppercase;
-    padding: 8px;
+    padding: 0px;
     display: block;
 }
 
-#nav a:hover{
-    color: #fdcc00;
+#nav li:hover {
     background-color: #1C4935;
+}
+
+#nav a:hover {
+		color: #fdcc00;
 }
 
 #mobile-menu-title{
@@ -91,7 +106,7 @@ body {
     color: #fdcc00;
     font-size: 32px;
     text-transform: uppercase;
-    padding: 8px;
+    padding: 10px;
     display: block;
     cursor: pointer;
     
@@ -103,12 +118,12 @@ body {
     transition: max-height .7s;
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 900px) {
     
     #nav {
     height: auto;
-    position: relative;
-    width: auto;
+    position: absolute;
+    width: 0 auto;
     }
     
     #nav ul{
@@ -116,12 +131,14 @@ body {
         justify-content: space-around;
         padding: 0px;
         flex-wrap: wrap;
+				width: 75%;
+				margin: 0 auto;
     }
     
     #nav a{
         display: inline;
-        font-size: 24px;  
-        padding: 0px 8px;
+        font-size: 18px;  
+        padding: 0px 4px;
     }
     
     #nav li{

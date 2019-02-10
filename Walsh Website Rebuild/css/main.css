@@ -1,5 +1,15 @@
 /* Global Site Styles */
 
+@font-face {
+   font-family: Garamond;
+   src: url(Garamond.ttf);
+}
+
+@font-face {
+   font-family: Garamond;
+   src: url(Garamond_Bold.ttf);
+   font-weight: bold;
+}
 
 * {
     font-family: Georgia, serif;
@@ -48,12 +58,41 @@ a:visited{
 /* Index Styles */
 
 
-.cover-photo{
-    max-width: 80%;
-    max-height: auto;
-    padding-top: 5%;    
-}
+/* Image Carousel */
+.rslides {
+  position: relative;
+  list-style: none;
+	max-height: 640px;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
 
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  width: 80%;
+  border: 0;
+	margin: 0 auto;
+  }
+
+
+/* make caontainers for these items and flex them */
 .announcement-title{
     font-size: 60px;
     color: #fdcc00;

@@ -1,5 +1,16 @@
+@font-face {
+   font-family: Garamond;
+   src: url(Garamond.ttf);
+}
+
+@font-face {
+   font-family: Garamond;
+   src: url(Garamond_Bold.ttf);
+   font-weight: bold;
+}
+
 * {
-    font-family: Georgia, serif;
+    font-family: Garamond, serif;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -18,6 +29,11 @@ body {
 #footer{
     display: flex;
     flex-wrap: wrap;
+		background-color: #1C4935; 
+}
+
+.single-contact {
+	margin: 4px;
 }
 
 #footer .single-contact:nth-child(1), #footer .single-contact:nth-child(2){
@@ -30,8 +46,8 @@ body {
 }
 
 .single-contact p{
-    font-family: Georgia;
-    font-weight: bold;
+    font-family: Garmond;
+    font-weight: normal;
     font-size: 24px;;
     color: #FFFFFF;
     text-align: center;
@@ -39,15 +55,14 @@ body {
 
 a.contact-email-link, a.contact-email-link:hover{
     color: #fdcc00;
-    font-family: "Georgia", serif;
+    font-family: Garamond, serif;
     font-size: 20px;
     font-style: normal;
     font-weight: bold;
 }
 
 a.contact-email-link:hover{
-    color: #1C4935;
-    background-color: #fdcc00;
+    color: #FFFFFF;
 }
 
 @media only screen and (max-width: 1280px) {

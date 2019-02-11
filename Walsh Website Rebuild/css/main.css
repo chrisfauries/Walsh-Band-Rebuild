@@ -12,7 +12,7 @@
 }
 
 * {
-    font-family: Georgia, serif;
+    font-family: Garamond, serif;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -31,7 +31,7 @@ p{
 
 a:link, a:hover, a:visited{
     font-size: 24px;
-    font-family: "Georgia", serif;
+    font-family: Garamond, serif;
     font-style: normal;
     text-decoration: underline;
     font-weight: normal;
@@ -51,7 +51,7 @@ a:visited{
 
 
 #main-content{
-    padding-top: 200px;
+    padding-top: 150px;
 }
 
 
@@ -92,22 +92,58 @@ a:visited{
   }
 
 
-/* make caontainers for these items and flex them */
-.announcement-title{
-    font-size: 60px;
+/* Index Content */
+
+#index-column-wrapper {
+	display: flex;
+	margin: 20px auto;
+	width: 98%;
+	background-color: #ddd;
+}
+
+.col1 {
+	width: 30%;
+	padding: 1%;
+	margin: .5%;
+	height: 600px;
+	background-color: #F2F3F4;
+}
+
+.col2 {
+	width: 30%;
+	padding: 1%;
+	margin: .5%;
+	height: 600px;
+	background-color: #F2F3F4;
+}
+
+.col3 {
+	width: 30%;
+	padding: 1%;
+	margin: .5%;
+	height: 600px;
+	background-color: #F2F3F4;
+}
+
+.title{
+    font-size: 48px;
+		padding-bottom: 20px;
     color: #fdcc00;
     text-decoration: underline;
 }
 
+/* Announcements Column */
+
 .announcement-message{
-    font-size: 48px;
+    font-size: 36px;
     color: #1C4935;
 }
 
-.events-title{
-    font-size: 60px;
-    color: #fdcc00;
-    text-decoration: underline;
+/* Events Column */
+
+.events-list li {
+		padding-bottom: 20px;
+		list-style: none;
 }
 
 .events-list a{
@@ -120,9 +156,59 @@ a:visited{
     color: #fdcc00;
 }
 
-.embed-video-player{
-    padding: 25px;
+/* Performances Column */
+
+.embed-container { 
+		position: flex;
+		max-width: 100%;
 }
+
+.embed-container iframe {
+		position: block; 
+		top: 0; 
+		left: 0; 
+		width: 100%; 
+		height: 100%;
+}
+
+
+/*Quotes*/
+
+.quotes {
+		position: relative;
+		height: 400px;
+}
+
+.quotes img {
+		width: 50px;
+		height: 50px;
+}
+
+.quotes img:nth-of-type(1) {
+		position: absolute;
+		left: 100px;
+		top: 50px;
+}
+
+.quotes img:nth-of-type(2) {
+		position: absolute;
+		right: 100px;
+		bottom: 50px;
+}
+
+.quotes blockquote {
+		padding: 150px;
+		color: gray;
+		font-size: 60px;
+		display: none;
+		margin: auto;
+		font-style: italic;
+}
+
+.quotes blockquote:nth-of-type(1) {
+		display: block;
+}
+
 
 /* Contact Us */
 

@@ -1,16 +1,11 @@
 // JavaScript for index.html (Walsh Band Website)
 
-// Header Insertion - jQuery
+// Header and Footer Insertion
 
 
 $("#headerLoadIn").load("header.html");
 
-
-//Footer Insertion - jQuery
-
-
 $("#footerLoadIn").load("footer.html");
-
 
 // Picture Carousel
 
@@ -31,8 +26,6 @@ $(".rslides").responsiveSlides({
   namespace: "rslides",   // String: Change the default namespace used
   before: function(){},   // Function: Before callback
   after: function(){}     // Function: After callback
-	
-	
 });
 
 // Form Validation - simple 

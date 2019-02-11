@@ -10,7 +10,7 @@
 }
 
 * {
-    font-family: Georgia, serif;
+    font-family: Garamond, serif;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -27,12 +27,15 @@ body {
 
 #header{
     width: 100%;
-		position: absolute;
+		position: fixed;
+		top: 0;
+	  left: 0;
+		z-index: 5;
 }
 
 #banner{
     background-color: #1C4935;
-    height: 144px;
+    height: 112px;
     display: flex;
 }
 
@@ -45,7 +48,7 @@ body {
 
 #banner .banner-title{
     font-size: 32px;
-    padding-top: 36px;
+    padding-top: 18px;
     padding-right: 132px;
     flex-grow: 1;
 }
@@ -70,7 +73,7 @@ body {
     background-color: #1F9547;
     overflow: hidden;
     transition: max-height .7s;
-    position: absolute;
+    position: relative;
     min-width: 100%;
     
 }
@@ -118,12 +121,14 @@ body {
     transition: max-height .7s;
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 768px) {
     
     #nav {
     height: auto;
-    position: absolute;
     width: 0 auto;
+		position: sticky;
+		position: -webkit-sticky;
+		top: 0;
     }
     
     #nav ul{
@@ -131,13 +136,13 @@ body {
         justify-content: space-around;
         padding: 0px;
         flex-wrap: wrap;
-				width: 75%;
+				width: 90%;
 				margin: 0 auto;
     }
     
     #nav a{
         display: inline;
-        font-size: 18px;  
+        font-size: 14px;  
         padding: 0px 4px;
     }
     
@@ -148,4 +153,23 @@ body {
     #mobile-menu-title{
         display: none;
     }
+}
+
+@media only screen and (min-width: 1200px) {
+	
+	    #nav a{
+        display: inline;
+        font-size: 18px;  
+        padding: 0px 4px;
+    }
+	
+	    #nav ul{
+        display:flex;
+        justify-content: space-around;
+        padding: 0px;
+        flex-wrap: wrap;
+				width: 75%;
+				margin: 0 auto;
+    }
+	
 }

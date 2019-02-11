@@ -73,7 +73,7 @@ body {
     background-color: #1F9547;
     overflow: hidden;
     transition: max-height .7s;
-    position: relative;
+    position: static;
     min-width: 100%;
     
 }

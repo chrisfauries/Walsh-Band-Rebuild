@@ -28,6 +28,28 @@ $(".rslides").responsiveSlides({
   after: function(){}     // Function: After callback
 });
 
+// Quote animation
+
+var allQuotes = $('.quotes blockquote');
+var currentQuote = 0;
+
+function changeQuote() {
+	
+	$(allQuotes[currentQuote]).fadeOut(1000, function(){
+		
+		if(currentQuote === allQuotes.length - 1) {
+			currentQuote = 0;	
+		} else {
+			currentQuote++;
+		}
+	
+	$(allQuotes[currentQuote]).fadeIn(1000);
+	});	
+}
+
+var QuoteTimer = setInterval(changeQuote, 8000);
+
+
 // Form Validation - simple 
 
 

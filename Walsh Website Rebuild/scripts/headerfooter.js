@@ -1,4 +1,4 @@
-document.onload = function() {
+window.onload = function() {
 	
 	var mobileNavMenu = document.getElementById("nav"); 
 
@@ -26,3 +26,5 @@ document.onload = function() {
 	}
 
 }
+
+

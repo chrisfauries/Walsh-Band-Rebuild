@@ -213,6 +213,41 @@ a:visited{
 }
 
 
+/* Calendar Page */
+
+#full-calendar {
+	padding-top: 175px;
+	padding-bottom: 20px;
+	margin: 0 auto;
+	top: 200px;
+	width: 80%;
+	min-width: 768px;
+}
+
+#full-calendar iframe {
+	width: 100%; 
+	height: 800px;
+}
+
+ @media (max-width: 768px) {
+	 
+     .desktop-calendar {
+         display: none;
+     }
+	 
+	 	 #full-calendar {
+				 padding-top: 200px;
+				 min-width: 0px;
+	 }
+ }
+
+ @media (min-width: 769px) {
+	 
+		.mobile-calendar {
+				 display: none;
+     } 
+ }
+
 /* Contact Us */
 
 #contact-us-form{

@@ -94,9 +94,7 @@ body {
     display: block;
 }
 
-#nav li  {
-		padding: 0px 20px;
-}
+
 
 #nav li:hover {
     background-color: #1C4935;

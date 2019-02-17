@@ -94,6 +94,10 @@ body {
     display: block;
 }
 
+#nav li  {
+		padding: 0px 20px;
+}
+
 #nav li:hover {
     background-color: #1C4935;
 }
@@ -126,8 +130,6 @@ body {
     #nav {
     height: auto;
     width: 0 auto;
-		position: sticky;
-		position: -webkit-sticky;
 		top: 0;
     }
     
@@ -137,17 +139,12 @@ body {
         padding: 0px;
         flex-wrap: wrap;
 				width: 90%;
-				margin: 0 auto;
     }
     
     #nav a{
         display: inline;
         font-size: 14px;  
         padding: 0px 4px;
-    }
-    
-    #nav li{
-       // flex: 1 1 0;
     }
     
     #mobile-menu-title{
@@ -165,7 +162,7 @@ body {
 	
 	    #nav ul{
         display:flex;
-        justify-content: space-around;
+				justify-content: space-around;
         padding: 0px;
         flex-wrap: wrap;
 				width: 75%;

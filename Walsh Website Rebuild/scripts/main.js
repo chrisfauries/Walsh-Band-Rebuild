@@ -2,10 +2,13 @@
 
 // Header and Footer Insertion
 
+$('document').ready(() => {
+	$("#headerLoadIn").load("./header.html");
 
-$("#headerLoadIn").load("header.html");
+	$("#footerLoadIn").load("./footer.html");
+	
+})
 
-$("#footerLoadIn").load("footer.html");
 
 // Picture Carousel
 

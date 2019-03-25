@@ -9,7 +9,7 @@
    font-weight: bold;
 }
 
-* {
+html {
     font-family: Garamond, serif;
     text-align: center;
     margin: 0;
@@ -39,6 +39,10 @@ body {
     display: flex;
 }
 
+#banner a {
+		margin: 0 auto;
+}
+
 #banner .banner-logo{
     height: calc(100% - 16px);
     padding: 8px;
@@ -47,21 +51,24 @@ body {
 }
 
 #banner .banner-title{
-    font-size: 32px;
-    padding-top: 18px;
-    padding-right: 132px;
+		display: none;
+    font-size: 24px;
     flex-grow: 1;
+		padding-top: 35px;
 }
 
 @media only screen and (min-width: 768px) {
     #banner .banner-title{
         font-size: 44px;
+				display: block;
+			  padding-right: 132px;
+			  padding-top: 18px;
     }
 }
 
 @media only screen and (min-width: 1200px) {
     #banner .banner-title{
-        font-size: 72px;
+        font-size: 72px;  
     }
 }
 

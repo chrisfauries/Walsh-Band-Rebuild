@@ -29,7 +29,7 @@ body {
 #footer{
     display: flex;
     flex-wrap: wrap;
-		background-color: #1C4935; 
+	background-color: #1C4935; 
 }
 
 .single-contact {

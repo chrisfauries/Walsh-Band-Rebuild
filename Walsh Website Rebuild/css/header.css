@@ -9,28 +9,14 @@
    font-weight: bold;
 }
 
-html {
-    font-family: Garamond, serif;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-size: 24px;
-    font-weight: normal;
-    color: #fdcc00;
-}
-
-
 /******* Banner Styles *******/
 
 #header{
     width: 100%;
-		position: fixed;
-		top: 0;
-	  left: 0;
-		z-index: 5;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 5;
 }
 
 #banner{
@@ -40,7 +26,7 @@ body {
 }
 
 #banner a {
-		margin: 0 auto;
+	margin: 0 auto;
 }
 
 #banner .banner-logo{
@@ -51,18 +37,18 @@ body {
 }
 
 #banner .banner-title{
-		display: none;
+	display: none;
     font-size: 24px;
     flex-grow: 1;
-		padding-top: 35px;
+	padding-top: 35px;
 }
 
 @media only screen and (min-width: 768px) {
     #banner .banner-title{
         font-size: 44px;
-				display: block;
-			  padding-right: 132px;
-			  padding-top: 18px;
+		display: block;
+		padding-right: 132px;
+		padding-top: 18px;
     }
 }
 
@@ -79,10 +65,8 @@ body {
     max-height: 64px;
     background-color: #1F9547;
     overflow: hidden;
-    transition: max-height .7s;
-    position: relative;
-    min-width: 100%;
-    
+    transition: max-height .3s;
+    min-width: 100%; 
 }
 
 #nav ul{
@@ -108,7 +92,7 @@ body {
 }
 
 #nav a:hover {
-		color: #fdcc00;
+	color: #fdcc00;
 }
 
 #mobile-menu-title{
@@ -127,15 +111,14 @@ body {
 #nav.show-mobile-menu{
     display: block;
     max-height: 480px;
-    transition: max-height .7s;
+    transition: max-height .3s;
 }
 
 @media only screen and (min-width: 768px) {
     
     #nav {
-    height: auto;
-    width: 0 auto;
-		top: 0;
+        height: auto;
+        width: 0 auto;
     }
     
     #nav ul{
@@ -143,7 +126,7 @@ body {
         justify-content: space-around;
         padding: 0px;
         flex-wrap: wrap;
-				width: 90%;
+		width: 90%;
     }
     
     #nav a{
@@ -159,19 +142,27 @@ body {
 
 @media only screen and (min-width: 1200px) {
 	
-	    #nav a{
+	#nav a{
         display: inline;
         font-size: 18px;  
         padding: 0px 4px;
     }
 	
-	    #nav ul{
+    #nav ul{
         display:flex;
-				justify-content: space-around;
+        justify-content: space-around;
         padding: 0px;
         flex-wrap: wrap;
-				width: 75%;
-				margin: 0 auto;
+        width: 75%;
+        margin: 0 auto;
     }
 	
+}
+
+
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }

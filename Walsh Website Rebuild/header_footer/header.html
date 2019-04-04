@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 
 <html>
-<head>
-        
+    <head>
         <meta charset="utf-8" />
         <meta name="keywords" content="band, middle school, Round Rock ISD, Walsh, Walsh Middle School, concert band, RRISD, Texas, instruments">
         <meta name="description" content="Official Website of the Walsh Middle School Band. Located in Round Rock, Texas. Round Rock ISD.">
         <title>Walsh Middle School Band</title>    
         <link rel="stylesheet" type="text/css" href="css/header.css">
-				<meta name="viewport" content="width=device-width, initial-scale=1.0">
-       
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    
     <body>
-        
 <!-- Header Banner --->
         <div id="header">
             <div id="banner">
@@ -23,7 +19,7 @@
 
  <!-- Navigation Bar --->
 
-            <nav id="nav">
+            <nav id="nav" class="browser-default">
                 <ul>
                     <li id="mobile-menu-title">&#9776; Menu</li>
                     <li><a href="calendar.html">calendar</a></li>
@@ -32,11 +28,45 @@
                     <li><a href="6thgraders.html">5th graders</a></li>
                     <li><a href="plessons.html">Private lessons</a></li>
                     <li><a href="documents.html">Handouts</a></li>
-                    <li><a href="links.html">Links</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
       
-        <script src="/scripts/headerfooter.js"></script>
+        <script>
+	        var mobileNavMenu = document.getElementById("nav");
+	        var mobileNavMenuButton = document.getElementById("mobile-menu-title");
+
+	        mobileNavMenuButton.onclick = function(){
+                if (mobileNavMenu.className == "show-mobile-menu"){
+                        mobileNavMenu.className = "";
+                }else{
+                        mobileNavMenu.className = "show-mobile-menu";
+                }
+	        }
+
+	        window.onclick = function(event) {
+			    if (!event.target.matches("#mobile-menu-title")) {
+			    mobileNavMenu.className = "";
+			    }
+            }     
+            
+            
+
+
+            window.onscroll = function() {myFunction()};
+var navbar = document.getElementById("nav");
+
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+        </script>
     </body>
 </html>

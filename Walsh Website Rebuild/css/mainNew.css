@@ -12,16 +12,16 @@
 }
 
 * {
-    font-family: Garamond, serif;
-    text-align: center;
-    margin: 0;
-    padding: 0;
+	font-family: Garamond, serif;
+	text-align: center;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-    font-size: 24px;
-    font-weight: normal;
-    color: #fdcc00;
+	font-size: 24px;
+	font-weight: normal;
+	color: #fdcc00;
 	background-color: #F3F3F3;
 }
 
@@ -52,19 +52,17 @@ a:visited{
 
 
 #main-content{
-    padding-top: 150px;
+		padding-top: 30px;
+		min-height: 720px;
 }
 
 @media only screen and (max-width: 768px) {
 
 	#main-content{
-    padding-top: 190px;
+    padding-top: 30px;
 	}
 	
 }
-
-/* Index Styles */
-
 
 /* Image Carousel */
 .rslides {
@@ -259,7 +257,90 @@ a:visited{
 
 /* Contact Us */
 
-#contact-us-form{
-    background-color: aquamarine;
-    margin: 0 auto;
+#contact-us {
+	color: black;
+}
+
+.form-style {
+	margin:10px auto;
+	max-width: 1000px;
+	padding: 20px 12px 10px 20px;
+	font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.form-style li {
+	padding: 0;
+	display: block;
+	list-style: none;
+	margin: 10px 0 0 0;
+}
+.form-style label{
+	font-size: 18px;
+	margin:0 0 3px 0;
+	padding:0px;
+	display:block;
+	font-weight: bold;
+}
+.form-style input[type=text], 
+.form-style input[type=email],
+textarea, 
+select{
+	font-size: 16px;
+	display: block;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	border:1px solid #BEBEBE;
+	padding: 7px;
+	margin:0 auto;
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	outline: none;	
+}
+.form-style input[type=text]:focus,
+.form-style input[type=email]:focus,
+.form-style textarea:focus, 
+.form-style select:focus{
+	-moz-box-shadow: 0 0 8px #88D5E9;
+	-webkit-box-shadow: 0 0 8px #88D5E9;
+	box-shadow: 0 0 8px #88D5E9;
+	border: 1px solid #88D5E9;
+}
+.form-style .field-divided{
+	width: 30%;
+}
+.form-style .field-long{
+	width: 30%;
+}
+.form-style .field-select{
+	width: 30%;
+}
+.form-style .field-textarea{
+	width: 60%;
+	height: 200px;
+}
+.form-style input[type=submit], .form-style input[type=button]{
+	cursor: pointer;
+	font-size: 24px;
+	background: #4B99AD;
+	padding: 16px 30px 16px 30px;
+	border: none;
+	color: #fff;
+}
+.form-style input[type=submit]:hover, .form-style input[type=button]:hover{
+	background: #4691A4;
+	box-shadow:none;
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+}
+#error {
+	color: red;
+}
+.form-style .required{
+	color:red;
+}
+
+#error, #status {
+	font-size: 18px;
 }

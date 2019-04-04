@@ -8,45 +8,73 @@
         <meta name="keywords" content="band, middle school, Round Rock ISD, Walsh, Walsh Middle School, concert band, RRISD, Texas, instruments">
         <meta name="description" content="Official Website of the Walsh Middle School Band. Located in Round Rock, Texas. Round Rock ISD.">
         <title>Walsh Middle School Band</title>    
-        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/mainNew.css">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">   
         
         
     </head>
     
     <body>
+			 <div id="headerLoadIn"></div>
        <div id="main-content">
         
-            <div class="contact-us">
-                <form id="contact-us-form" name="contactUsForm" action="mailto:chrisfauries@google.com" method="post" enctype="text/plain">
-                <h2>Contact Us:</h2>
-                To: 
-                <select name="teacher-emails">
-                <option>--- Directors ---</option>
-                <option>Jennifer Bergeron</option>
-                <option>Chris Fauries</option>
-                <option>Josh Stover</option>
-                <option></option>
-                <option>--- Lesson Teachers ---</option>
-                <option>Beth B</option>
-                <option>Kevin Gibbs</option>
-                <option>Andy Russell</option>
-                <option>Carolyn Trowbridge</option>    
-                </select>
-                <br>
-                First Name: * <span id="error-message-1"></span>
-                <input type="text" name="adultFirstName"><br>
-                Last Name: * <span id="error-message-2"></span>
-                <input type="text" name="adultLastName"><br>
-                Student's Name: 
-                <input type="text" name="student-name"><br>
-                E-mail:* <span id="error-message-3"></span>
-                <input type="text" name="email"><br>
-                Message:<br>
-                <input type="text" name="message" size="50"><br><br>
-                <input id="submit-button" type="submit" name="submit" value="Send">
-                </form>
+            <div id="contact-us">
+							<h2>Contact Us</h2>
+							<form id='contactForm'>
+							<ul class="form-style">
+									<li><label id="parentFirstLabel">Parent Name <span class="required">*</span></label>
+										<input id="parentFirst" type="text" name="field1" class="field-divided" placeholder="First" />
+										<input id="parentLast" type="text" name="field2" class="field-divided" placeholder="Last" />
+									</li>
+									<li><label>Student Name <span class="required">*</span></label>
+										<input id="studentFirst" type="text" name="field1" class="field-divided" placeholder="First" />
+										<input id="studentLast" type="text" name="field2" class="field-divided" placeholder="Last" />
+									</li>
+
+									<li>
+											<label>Email <span class="required">*</span></label>
+											<input type="email" id="email" name="email" class="field-long" />
+									</li>
+									<li>
+											<label>Band Director:</label>
+											<select name="recipient" id="recipient" class="field-select">
+											<option disabled>--Band Directors--</option>
+											<option value="jennifer_bergeron@roundrockisd.org">Jennifer Bergeron</option>
+											<option value="joshua_stover@roundrockisd.org">Joshua Stover</option>
+											<option value="chris_fauries@roundrockisd.org">Chris Fauries</option>
+											<option disabled>--Private Lesson Teachers--</option>
+											<option value="beth.behning@gmail.com">Beth Behning - Flute</option>
+											<option value="rpoole0615@gmail.com">Rebecca Poole - Flute</option>
+											<option value="rebecca.fairweather@gmail.com">Rebecca Haskins - Oboe</option>
+											<option value="aonieal@gmail.com">Alex Onieal - Bassoon</option>
+											<option value="laurievin@live.com">Laurie Vinklarek - Clarinet</option>
+											<option value="kpgibbs@gmail.com">Kevin Gibbs - Saxophone</option>
+											<option value="hunterdj92@gmail.com">Dustin Hunter - Saxophone</option>
+											<option value="sarahwinglamau@gmail.com">Sarah Au - French Horn</option>
+											<option value="nicholasballeza@gmail.com">Nick Balleza - Trumpet</option>
+											<option value="waldenshane@gmail.com">Shane Walden - Trumpet</option>
+											<option value="milo48@suddenlink.net">Andy Russell - Trombone</option>
+											<option value="dustysteinle@gmail.com">Dusty Steinle - Tuba</option>
+											<option value="carolyn.trowbridge@gmail.com">Carolyn Trowbridge - Percussion</option>
+											</select>
+									</li>
+									<li>
+											<label>Your Message <span class="required">*</span></label>
+											<textarea id="message" name="field5" id="field5" class="field-long field-textarea"></textarea>
+									</li>
+									<div id="error"></div>
+									<div id="status"></div>
+									<li>
+											<input type="submit" value="Send" />
+									</li>
+							</ul>
+							</form>
             </div>  
         </div>
-        <script src="scripts/main.js"></script>
+         
+				<div id="footerLoadIn"></div>
+				<script src="/jquery/jquery331.js"></script>
+				<script src="/jquery/jquery.preloaders.js"></script>
+        <script src="/scripts/forms.js"></script>
     </body>
 </html>
